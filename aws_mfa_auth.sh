@@ -16,7 +16,7 @@ defaultAwsRegion="eu-west-2"
 # Collect MFA Token
 read -p "Enter MFA Token: " mfaToken
 
-if [[ ! "$mfaToken" =~ ^[0-9]{6} ]]
+if [[ ! "$mfaToken" =~ ^[0-9]{6}$ ]]
 then 
   echo "Invalid MFA Token Supplied" && exit 
 fi
